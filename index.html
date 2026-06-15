@@ -493,18 +493,21 @@ const CONFIG = {
   LIFF_ID: "2010392234-qGxuFE97",
 
   // Google Form URL (เอาจาก Get pre-filled link แล้วตัด ?... ออก)
-  FORM_BASE_URL: "https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform",
+  FORM_BASE_URL: "https://docs.google.com/forms/d/e/1FAIpQLSeAF02leHasY4kNyYsxId13IHM0Q4J79AywUv6VCwL29MQBdA/viewform",
 
   // entry IDs ของแต่ละฟิลด์ใน Google Form
   // วิธีหา: เปิดฟอร์ม → ⋮ → Get pre-filled link → กรอกข้อมูล → Copy link
   // URL จะมี entry.XXXXXXXXXX=ค่า → เอาตัวเลขหลัง entry. มาใส่
   FORM_ENTRIES: {
-    productCode:  "entry.1111111111",  // รหัสสินค้า
-    productName:  "entry.2222222222",  // ชื่อสินค้า
-    sellerName:   "entry.3333333333",  // ผู้ขาย/หน่วยงานผู้ขาย
-    pricePerUnit: "entry.4444444444",  // ราคา/หน่วย
-    buyerName:    "entry.5555555555",  // ชื่อ-สกุลผู้สั่งซื้อ
-    lineId:       "entry.6666666666",  // LINE ID หรือชื่อใน LINE
+    productCode:  "entry.1409164558",  // ประเภทสินค้า
+    productName:  "entry.1166710463",  // รายละเอียดสินค้า
+    sellerName:   "entry.0000000000",   // ไม่มีฟิลด์นี้ในฟอร์ม (ignored)
+    pricePerUnit: "entry.1337841035",  // ราคา (บาท)
+    buyerName:    "entry.2119573839",  // ชื่อ-นามสกุล
+    lineId:       "entry.1226034250",  // ช่องทางติดต่ออื่น (LINE ID / Facebook)
+    phone:        "entry.2132646220",  // เบอร์โทรศัพท์
+    quantity:     "entry.2100506207",  // จำนวน (ชิ้น)
+    address:      "entry.175947489",   // ที่อยู่ / สถานที่จัดส่ง
   },
 
   // เบอร์โทรแอดมิน (กด 📞 ที่หัว header)
